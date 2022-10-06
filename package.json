@@ -1,6 +1,6 @@
 {
   "name": "khan",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": "Farkhan Azmi",
   "description": "source code all khan bot",
   "main": "index.js",
