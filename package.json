@@ -1,0 +1,30 @@
+{
+  "name": "khan",
+  "version": "1.2.0",
+  "author": "Farkhan Azmi",
+  "description": "source code all khan bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --es-module-specifier-resolution=node ./src/app.js",
+    "dev": "nodemon --es-module-specifier-resolution=node ./src/app.js"
+  },
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "node-telegram-bot-api": "^0.58.0",
+    "qs": "^6.11.0",
+    "telegram-keyboard": "^2.3.2",
+    "twitter": "^1.7.1",
+    "twitter-api-v2": "^1.12.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "nodemon": "^2.0.13",
+    "prettier": "^2.7.1"
+  }
+}

@@ -1,0 +1,18 @@
+# #!/bin/bash 
+
+# name="Example"
+
+# buildScript(){
+#     # your build script
+# }
+
+# (
+#     set -e
+#     buildScript &>/dev/null
+#     echo $'\n'"🟢 Build ${name} Success"
+# )
+# errorCode=$?
+# if [ $errorCode -ne 0 ]; then
+# echo $'\n'"🔴 Build ${name} Failed"
+# exit $errorCode
+# fi
