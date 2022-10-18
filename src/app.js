@@ -2,9 +2,12 @@ import express from "express";
 import { port } from "./env";
 import { bot } from "./bot";
 import { youtube } from "scrape-youtube";
-
+import cors from "cors";
 const app = express();
+
 app.use(express.json());
+app.use(cors());
+
 app.listen(port, "0.0.0.0");
 
 app.post("/" + bot.token, (req, res) => {
