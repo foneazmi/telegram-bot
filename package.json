@@ -16,6 +16,7 @@
     "express": "^4.18.1",
     "node-telegram-bot-api": "^0.58.0",
     "qs": "^6.11.0",
+    "scrape-youtube": "^2.3.2",
     "telegram-keyboard": "^2.3.2",
     "twitter": "^1.7.1",
     "twitter-api-v2": "^1.12.5"

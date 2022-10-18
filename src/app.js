@@ -1,6 +1,7 @@
 import express from "express";
 import { port } from "./env";
 import { bot } from "./bot";
+import { youtube } from "scrape-youtube";
 
 const app = express();
 app.use(express.json());
@@ -36,5 +37,12 @@ app.post("/log", (req, res) => {
   } else {
     bot.sendMessage(query.chatId, `${JSON.stringify(body)}`);
   }
+  res.sendStatus(200);
+});
+
+app.get("/yt", async (req, res) => {
+  let { query } = req;
+  let result = await youtube.search(query.q);
+  res.json(result.videos);
   res.sendStatus(200);
 });
